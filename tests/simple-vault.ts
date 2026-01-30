@@ -23,6 +23,7 @@ describe("simple-vault", () => {
     );
 
 
+
   it("Is initialized!", async () => {
 
     // Call initialize with all required accounts
@@ -42,6 +43,7 @@ describe("simple-vault", () => {
     
     console.log("Vault initialized with signer:", vaultAccount.signer.toString());
   });
+
 
 
    it("Add Funds!", async () => {
@@ -69,6 +71,7 @@ describe("simple-vault", () => {
     assert.equal((balanceAfter - balanceBefore), amount.toNumber());
     console.log(`Successfully added ${amount.toNumber()} lamports to vault`);
   });
+
 
 
      it("Withdraw Funds!", async () => {
